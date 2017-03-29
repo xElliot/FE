@@ -1,0 +1,55 @@
+{% extends "dashboard.html" %}
+
+
+{% block view %}
+
+{% autoescape None %}
+<table class="table table-bordered table-striped table-condensed">
+	<tr>
+    <td class="args-0" argtype="date">    </td>
+		<td class="args-1" argtype="servName"></td>
+		<td class="args-2" argtype="channel"></td>
+    <td class="args-3" argtype="roleID"></td>
+    <td class="args-4" argtype="content" value="聊天内容">  </td>
+	</tr>
+</table>
+
+<div class="search"></div>
+
+{% end %}
+
+{% block model %}
+<script type="text/javascript">
+	var viewer = {
+		name: "game_master_viewer",
+		url: "/game_master",
+		valuables: [5],
+		uiArgs: {
+			serverList: {{ serverList }},
+			channelList: {{ channelList }},
+
+		},
+
+		initUI: function() {
+		    // 高亮选择项
+		    $(".nav").find(".active").removeClass("active");
+		    $(".nav").find("#game_master").addClass("active");
+
+		},
+
+		onRequest: function() {
+		},
+
+		onResult: function(result) {
+			$('#result-table').bootstrapTable({
+				pagination: true,
+				pageSize: 50,
+				columns: result["columns"],
+				data: result["data"],
+			});
+		},
+	}
+</script>
+
+<script type="text/javascript" src={{ static_url("query.js") }}></script>
+{% end %}
