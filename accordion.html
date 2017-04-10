@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  	<!-- Latest compiled and minified CSS -->
+  	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.css">
+
+  	<!-- Latest compiled and minified JavaScript -->
+  	<script src="//cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+
+  	<!-- Latest compiled and minified Locales -->
+  	<script src="//cdn.bootcss.com/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
+
+</head>
+<body>
+<div style="width: 200px;">
+      <div class="panel-group" id="accordion2">
+      <div class="panel-heading">
+        <strong style="font-size: 30px;">论坛分类</strong>
+      </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" data-toggle="collapse"
+            data-parent="#accordion2" href="#collapseOne">
+            <a class="accordion-toggle">Java</a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse"
+            style="height: 0px;">
+            <div class="panel-body">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">Java基础</a></li>
+                <li><a href="#">Java面向对象</a></li>
+                <li><a href="#">Java核心API</a></li>
+                <li><a href="#">JavaEE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" data-toggle="collapse"
+            data-parent="#accordion2" href="#collapseTwo">
+            <a class="accordion-toggle">数据库</a>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse"
+            style="height: 0px;">
+            <div class="panel-body">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">SQL基础</a></li>
+                <li><a href="#">Oracle</a></li>
+                <li><a href="#">MySQL</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" data-toggle="collapse"
+            data-parent="#accordion2" href="#collapseThree">
+            <a class="accordion-toggle">技术前沿</a>
+          </div>
+          <div id="collapseThree" class="panel-collapse in"
+            style="height: 0px;">
+            <div class="panel-body">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">NoSQL</a></li>
+                <li><a href="#">Hadoop</a></li>
+                <li><a href="#">WebService</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
