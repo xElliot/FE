@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My canv page</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+  </body>
+
+  <script type="text/javascript">
+    onload = function() {
+      draw();
+    };
+
+    function draw() {
+      var canvas = document.getElementById('canvas');
+      if (! canvas || !canvas.getContext) return false;
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = "#794444";
+      ctx.fillRect(0, 0, 150, 75);
+    }
+  </script>
+</html>
